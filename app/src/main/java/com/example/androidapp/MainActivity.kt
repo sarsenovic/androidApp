@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         }
         setupDrawer()
 
+        //proba commit
+
 
     }
     fun setupDrawer(){
@@ -56,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             this
         )
 
-        drawerRecyclerView.layoutManager = linearLayoutManager
+        drawerRecyclerView.layoutManager = linearLayoutManager as RecyclerView.LayoutManager?
         drawerRecyclerView.adapter = adapterDrawer
     }
     fun openCloseDrawer(){
